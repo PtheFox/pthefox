@@ -298,4 +298,146 @@
 # print(other)
 # print(d)
 
-##None
+# ##None
+# a=None
+# print(a)
+
+##dictionary
+
+# dictionary = {
+#   'a':[1,2,3],
+#   'b':'hello',
+#   'x': True
+# }
+
+# my_list = [
+#   {
+#   'a':[1,2,3],
+#   'b':'hello',
+#   'x': True
+#   },
+#   {
+#   'a':[4,5,6],
+#   'b':'hello',
+#   'x': True
+#   }
+# ]
+# print(dictionary['a'][0])
+# # print(dictionary)
+# print(my_list[0]['b'])
+
+
+### understandiong data structures
+
+# dictionary = {
+# '123' : [1,2,3],
+# '123' : 'hello'
+# }
+
+# print(dictionary['123'])
+
+# user = {
+# 'basket' : [1,2,3],
+# 'greet' : 'hello',
+# 'age': 20
+# }
+
+# user2 = dict(name='JohnJohn')          #dict(key=value) --> another way to create a dictionary by a method
+
+# print(user.get('age', '55'))
+# print(user2)
+
+# print('age' in user.keys())
+# print('hello' in user.values())
+# print(user.items())
+
+# # user.clear()
+# print(user)
+
+# # user3 = user.copy()
+# # print(user.clear())
+# # print (user3)
+
+# # print(user.pop('age'))
+# # print(user.popitem())
+# print(user.update({'ages':55}))
+
+# print(user)
+
+
+## tuple --> a tuple is like a list but ummutable, they can't be changed
+
+# my_tuple = (1,2,3,4,5,5)
+# print(my_tuple[1])
+# print(5 in my_tuple)
+
+# user = {
+# (1,2) : [1,2,3],
+# 'greet' : 'hello',
+# 'age': 20
+# }
+
+# print(user.items())
+# print(user[(1,2)])
+
+# # x=my_tuple[0]
+# # y=my_tuple[1]
+
+# x,y,z, *other = (1,2,3,4,5)
+
+# new_tuple = my_tuple[1:4]   #the tuples can be sliced
+# print(new_tuple)
+# print(other)
+# print(x)
+# print(y)
+# print(x+y)
+
+# print(my_tuple.count(5))
+# print(my_tuple.index(2))
+# print(len(my_tuple))
+
+## set --> unordered collections of unique objects
+
+# my_list=[1,2,3,4,5,5]
+# my_set = {1,2,3,4,5,5}
+# # my_set.add(100)
+# # my_set.add(2)
+# print(my_set)
+# print(set(my_list)) #--> new set created from a list
+# new_set=my_set.copy()
+# print(1 in my_list)
+# print(len(my_set))
+# print(new_set)
+# print(my_set.clear())
+# print(new_set)
+# print(my_set)
+
+# my_set = {1,2,3,4,5,5}
+# new_set=my_set.copy()
+# my_set.clear()
+# print(new_set)
+# print(my_set)
+
+# sets 2
+
+my_set = {4,5}
+your_set = {4,5,6,7,8,9,10}
+print(my_set)
+# print(my_set.difference(your_set))  #*
+# print(my_set.discard(5)) #*
+# print(my_set)
+
+# print(my_set.difference_update(your_set)) #*
+# print(my_set)
+
+# print(my_set.intersection(your_set)) #*
+# print(my_set & your_set) # a shortcut for intersection
+# print(my_set.isdisjoint(your_set)) #* --> it says if the the 2 sets have something in commun
+
+# print(my_set.union(your_set)) #* add 1 set to another and removes all the duplicated values
+# print(my_set|your_set) # a shortcut for union
+
+print(my_set.issubset(your_set))
+print(my_set.issuperset(your_set))
+
+print(your_set.issuperset(my_set))
